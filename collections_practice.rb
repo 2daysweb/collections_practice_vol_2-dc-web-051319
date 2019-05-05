@@ -129,16 +129,11 @@ keys_array = []
 cities_array = []
 city_schools = [] 
 
-i = 0 
-n = 0 
-n = keys_array.size
-
 keys_array = array.keys 
 
 keys_array.each do |school|
   cities_array.push(array[school][:location])
 end 
-
 cities_array = cities_array.uniq! 
 cities_array.each do |city|
   array.each do |k, v|
